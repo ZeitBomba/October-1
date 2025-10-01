@@ -1,0 +1,26 @@
+body {
+    animation: colorPulse 2.5s ease-in-out infinite;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    padding-top: 20em;
+    transform: scale(0.25);
+    cursor: pointer;
+}
+
+#interact {
+    animation: pulse 2.5s ease-in-out infinite;
+    transform: scale(1.5);
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.75); }
+  50%      { transform: scale(1); }
+}
+
+@keyframes colorPulse {
+  0%, 100% { background-color: black; }
+  50%      { background-color: pink; }
+}
